@@ -23,9 +23,20 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/main.css",
+              "node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/lightslider/dist/css/lightslider.min.css",
+              "node_modules/animate.css/animate.min.css",
+              "node_modules/swiper/dist/css/swiper.min.css",
+              "node_modules/simple-line-icons/css/simple-line-icons.css"
             ],
-            "scripts": []
+            "scripts": [
+               "node_modules/jquery/dist/jquery.min.js",
+               "node_modules/lightslider/dist/js/lightslider.min.js",
+               "node_modules/swiper/dist/js/swiper.min.js",
+               "node_modules/covervid/covervid.min.js"
+            ]
           },
           "configurations": {
             "production": {

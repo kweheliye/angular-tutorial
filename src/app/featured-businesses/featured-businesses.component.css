@@ -1,0 +1,22 @@
+.swiper-container {
+width: 100%;
+}
+.swiper-wrapper {
+box-sizing: border-box;
+}
+.swiper-slide {}
+
+
+h6 {
+  text-transform: capitalize;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap; }
+
+p.desc {
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+

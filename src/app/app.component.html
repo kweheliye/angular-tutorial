@@ -1,21 +1,106 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
+<nav class="navbar navbar-toggleable-md navbar-light bg-primary fixed-top"  id="navbar">
+  <div class="container " v-if="!search"  style="margin-top: 20px;">
+    <div style="position: absolute; top: -30px; right: 20px; font-size: 10px;" class="hidden-sm-down-bak">
+      <a href="" style="font-size: 10px;">English</a>
+      <span class="mr-1 ml-1">|</span>
+      <a href="" style="font-size: 10px;">&#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;</a>
+    </div>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">SAFAQAH</a>
+    <div class="flag-selector" style="">
+      <div class="dropdown dropdown-country" ngbDropdown>
+        <button class="btn btn-secondary btn-xs dropdown-toggle" style="border: none; border-radius: 5px; background: transparent; cursor: pointer;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>
+        <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/ae.svg" style="width: 8px"/> <span style="margin-top: 5px;     font-size: 11px;">UAE</span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/bh.svg" style="width: 12px"/> Bahrain</a>
+          <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/kw.svg" style="width: 12px"/> Kuwait</a>
+          <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/om.svg" style="width: 12px"/> Oman</a>
+          <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/qa.svg" style="width: 12px"/> Qatar</a>
+          <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/sa.svg" style="width: 12px"/> Saudi Arabia</a>
+          <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/ae.svg" style="width: 12px"/> UAE</a>
+        </div>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto" >
+      </ul>
+      <ul class="navbar-nav" >
+        <li class="nav-item active dropdown" ngbDropdown>
+          <button class="btn btn-secondary btn-xs dropdown-toggle" style="border: none; border-radius: 5px; background: transparent; cursor: pointer;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>
+          All Categories
+          </button>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="search.html">Agriculture <span class="text-muted">(0)</span></a>
+            <a class="dropdown-item" href="search.html">Building & Construction <span class="text-muted">(2)</span></a>
+            <a class="dropdown-item" href="search.html">Computer, Internet & Technology <span class="text-muted">(0)</span></a>
+            <a class="dropdown-item" href="search.html">Education <span class="text-muted">(2)</span></a>
+            <a class="dropdown-item" href="search.html">Entertainment & Leisure <span class="text-muted">(2)</span></a>
+            <a class="dropdown-item" href="search.html">Food & Beverage <span class="text-muted">(7)</span></a>
+            <a class="dropdown-item" href="search.html">Hair and Beauty <span class="text-muted">(2)</span></a>
+            <a class="dropdown-item" href="search.html">Health, Medical and Fitness <span class="text-muted">(0)</span></a>
+            <a class="dropdown-item" href="search.html">Manufacturing <span class="text-muted">(0)</span></a>
+            <a class="dropdown-item" href="search.html">Real Estate <span class="text-muted">(0)</span></a>
+            <a class="dropdown-item" href="search.html">Retail <span class="text-muted">(4)</span></a>
+            <a class="dropdown-item" href="search.html">Service <span class="text-muted">(6)</span></a>
+            <a class="dropdown-item" href="search.html">Transportation <span class="text-muted">(0)</span></a>
+            <a class="dropdown-item" href="search.html">Travel Related <span class="text-muted">(0)</span></a>
+            <a class="dropdown-item" href="search.html">Wholesale & Distribution <span class="text-muted">(0)</span></a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="how.html">How it works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pricing.html">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        
+        <li class="nav-item mr-2">
+          <a class="nav-link" href="login.html"><i class="icon-user icons"></i></a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a  href="edit.html" class="btn btn-primary my-2 my-sm-0">SELL YOUR BUSINESS</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
 <router-outlet></router-outlet>
+<footer class="footer text-white mt-0">
+  <div class="container">
+    <div class="row pt-5">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-12">
+            <h5 class="mt-4 mb-4 text-center">LOGO</h5>
+          </div>
+          <div class="col-md-6 offset-md-3">
+            <p class="mt-4 mb-4 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque molestie augue, ut congue erat ullamcorper vitae.</p>
+          </div>
+          <div class="col-md-6 offset-md-3">
+            <div class="d-flex justify-content-center mb-3 mt-3">
+              <ul class="social-network social-circle">
+                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook fa-fw"></i></a></li>
+                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter fa-fw"></i></a></li>
+                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin fa-fw"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+  </div>
+</footer>
