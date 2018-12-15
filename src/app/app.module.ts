@@ -9,6 +9,9 @@ import { SwiperModule } from 'angular2-useful-swiper';
 import { PopularCategoriesComponent } from './popular-categories/popular-categories.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HomePageComponent } from './home-page/home-page.component';
+import { HowComponent } from './how/how.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { HomePageComponent } from './home-page/home-page.component';
     FeaturedBusinessesComponent,
     BasicSearchComponent,
     PopularCategoriesComponent,
-    HomePageComponent
+    HomePageComponent,
+    HowComponent,
+    PricingComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

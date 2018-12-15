@@ -6,9 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./popular-categories.component.css']
 })
 export class PopularCategoriesComponent implements OnInit {
-
   constructor() { }
-
   ngOnInit() {
   }
 
