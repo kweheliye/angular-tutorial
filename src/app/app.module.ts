@@ -3,15 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FeaturedBusinessesComponent } from './featured-businesses/featured-businesses.component';
+import { FeaturedBusinessesComponent } from './home/featured-businesses/featured-businesses.component';
 import { BasicSearchComponent } from './basic-search/basic-search.component';
 import { SwiperModule } from 'angular2-useful-swiper';
-import { PopularCategoriesComponent } from './popular-categories/popular-categories.component';
+import { PopularCategoriesComponent } from './home/popular-categories/popular-categories.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { HomePageComponent } from './home-page/home-page.component';
 import { HowComponent } from './how/how.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
+import { BlogComponent } from './blog/blog.component';
+import { BusinessForSaleComponent } from './blog/business-for-sale/business-for-sale.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,12 @@ import { ContactComponent } from './contact/contact.component';
     FeaturedBusinessesComponent,
     BasicSearchComponent,
     PopularCategoriesComponent,
-    HomePageComponent,
     HowComponent,
     PricingComponent,
-    ContactComponent
+    ContactComponent,
+    HomeComponent,
+    BlogComponent,
+    BusinessForSaleComponent
   ],
   imports: [
     BrowserModule,
